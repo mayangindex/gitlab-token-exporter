@@ -8,7 +8,7 @@
       "packageNames": ["^mayangindex/gitlab-token-exporter$"],
       "packageFiles": ["^charts/.+"],
       "enabled": true,
-      "schedule": "daily"
+      "schedule": "weekly"
     }
   ]
 }
