@@ -6,5 +6,5 @@ metadata:
   labels:
     {{- include "gitlab-exporter.labels" . | nindent 4 }}
 data:
-  GITLAB_API_URL: "https://gitlab.linnovate.net"
+  GITLAB_API_URL: ""
   GITLAB_PERSONAL_ACCESS_TOKEN: ""
