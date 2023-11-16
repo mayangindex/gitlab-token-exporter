@@ -1,6 +1,6 @@
 module gitlab-token-prometheus-exporter
 
-go 1.21.1
+go 1.21.4
 
 require github.com/prometheus/client_golang v1.17.0
 
