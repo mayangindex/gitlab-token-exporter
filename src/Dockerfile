@@ -1,5 +1,5 @@
 # Use an official Golang runtime as a parent image
-FROM golang:1.22.2 as build
+FROM golang:1.22.3 as build
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -10,7 +10,7 @@ COPY . /app
 # Build the Go application
 RUN go build -o main .
 
-FROM golang:1.22.2 as run
+FROM golang:1.22.3 as run
 
 WORKDIR /app
 COPY --from=0 /app/main /app
