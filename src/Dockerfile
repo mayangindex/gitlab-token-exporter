@@ -7,6 +7,7 @@ COPY . /app
 # Build the Go application
 RUN go build -o main .
 
+
 FROM golang:1.26.3 as run
 WORKDIR /app
 COPY --from=0 /app/main /app
