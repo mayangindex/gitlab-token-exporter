@@ -1,12 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "platform": "github",
-  "baseBranch": "main",
+  "baseBranchPatterns": [
+    "main"
+  ],
   "packageRules": [
     {
-      "packageNames": ["^mayangindex/gitlab-token-exporter$"],
-      "packageFiles": ["^charts/.+"],
+      "matchPackageNames": [
+        "^mayangindex/gitlab-token-exporter$"
+      ],
+      "includePaths": [
+        "^charts/.+"
+      ],
       "enabled": true,
       "schedule": ["on monday"]
     }
